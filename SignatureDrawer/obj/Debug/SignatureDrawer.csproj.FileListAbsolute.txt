@@ -1,0 +1,15 @@
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\bin\Debug\SignatureDrawer.exe.config
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\bin\Debug\SignatureDrawer.exe
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\bin\Debug\SignatureDrawer.pdb
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.csprojAssemblyReference.cache
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\MainWindow.g.cs
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\App.g.cs
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer_MarkupCompile.cache
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer_MarkupCompile.lref
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\MainWindow.baml
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.g.resources
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.Properties.Resources.resources
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.csproj.GenerateResource.cache
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.csproj.CoreCompileInputs.cache
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.exe
+C:\Users\xazar\Desktop\SignatureDrawerFinal\SignatureDrawer\obj\Debug\SignatureDrawer.pdb

@@ -1,0 +1,114 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+ 
+
+namespace WindowsFormsApp3
+{
+    public delegate void XCoorChangedHandler(int newCoor);
+
+ 
+
+    public partial class Task1 : Form
+    {
+        private bool started;
+        private int xCoor, yCoor;
+        private int progress = 0;
+
+ 
+
+        public event XCoorChangedHandler XCoorChanged;
+
+ 
+
+        public int XCoor
+        {
+            get { return xCoor; }
+            set
+            {
+                xCoor = value;
+                if(XCoorChanged!=null && started)
+                {
+                    XCoorChanged.Invoke(xCoor);
+                }
+            }
+        }
+
+ 
+
+        public Timer timer;
+
+ 
+
+        public Task1()
+        {
+            InitializeComponent();
+            XCoor = 100;
+            yCoor = 100;
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Task1_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task1_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Task1_MouseDown);
+            this.XCoorChanged += new XCoorChangedHandler(Task1_XCoorChanged);
+            timer = new Timer();
+            timer.Interval = 30;
+            timer.Tick += timer_Tick;
+        }
+
+ 
+
+        private void Task1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.S)
+            {
+                started = true;
+            }
+            this.Invalidate();
+        }
+
+ 
+
+        private void Task1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (started)
+            {
+                XCoor = e.X;
+                yCoor = e.Y;
+            }
+
+ 
+
+            this.Invalidate();
+        }
+
+ 
+
+        private void Task1_Paint(object sender, PaintEventArgs e)
+        {
+            if (started)
+            {
+                e.Graphics.FillRectangle(Brushes.Green, XCoor, yCoor, 20, 20);
+            }
+        }
+
+ 
+
+        private void Task1_XCoorChanged(int newCoor)
+        {
+            Console.WriteLine(newCoor);
+        }
+
+ 
+
+        private void timer_Tick(object sender, System.EventArgs e)
+        {
+            
+        }
+    }
+}
